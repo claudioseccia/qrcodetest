@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #eee;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #ccc;
+	text-align: center;
+	display: flex; /* establish flex container */
+	flex-direction: column; /* make main axis vertical */
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center; /* center items vertically, in this case */
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center; /* center items horizontally, in this case */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.qrscan-container {
+	display: flex; /* establish flex container */
+	flex-direction: column; /* make main axis vertical */
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center; /* center items vertically, in this case */
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center; /* center items horizontally, in this case */
+	height: 100vh;
+	text-align: center;
+	border: 1px solid black; /* for demo purposes */
+	background-color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+	text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.qrscan {
+	height: 240px;
+	width: 320px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qrscan img {
+	max-width: 100%;
+}
+.test-button {
+	box-shadow: inset 0px -3px 7px 0px #29bbff;
+	background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color: #2dabf9;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 9px 23px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #263666;
+	margin: 0 5px;
+}
+.test-button:hover {
+	background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color: #0688fa;
+}
+.test-button:active {
+	position: relative;
+	top: 1px;
 }
